@@ -24,7 +24,7 @@
       </div>
       <hr />
       <div>
-        <h3>Secondary</h3>
+        <h3>Secondary....</h3>
 
         <Button type="secondary">Første knap</Button>
         <pre><code>{`<Button type="secondary">Første knap</Button>`}</code
