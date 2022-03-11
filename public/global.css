@@ -1,0 +1,63 @@
+:root {
+  --default-color: slategrey;
+  --primary-color: blue;
+  --primary-font-color: white;
+  --secondary-color: hotpink;
+
+  --max-content: 1200px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  line-height: 1.25;
+}
+
+:is(h1, h2, h3) {
+  margin-top: 0;
+}
+
+header,
+section {
+  padding: var(--padding-block, 1rem) max(2rem, 50vw - var(--max-content) / 2);
+}
+
+section {
+  --padding-block: 6rem;
+  background: #e5e8eb;
+}
+
+section:nth-child(even) {
+  background: hsl(264 10% 94%);
+}
+
+article {
+  background: #fff;
+}
+
+article > div {
+  display: grid;
+  grid-template-columns: min(15%, 25ch) 1fr;
+  gap: min(5%, 4rem);
+  padding: min(3%, 2rem);
+}
+
+article > div :not(h3) {
+  grid-column: 2;
+}
+
+article hr {
+  border: 0;
+  border-top: 1px solid hsl(264deg 10% 90%);
+  margin-inline: min(3%, 2rem);
+}
+
+pre {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  border-radius: 0.4rem;
+  color: #fdfdfd;
+  background: hsl(240deg 30% 15%);
+  width: fit-content;
+  max-width: 100%;
+}
